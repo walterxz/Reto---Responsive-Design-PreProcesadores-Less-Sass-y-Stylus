@@ -2,9 +2,16 @@ mixin list(titulo)
     .list
         .list__title=titulo
         .list__box
-            iframe(src="https://www.youtube.com/embed/giYeaKsXnsI?controls=0?autoplay=1" frameborder="0" allow="autoplay;" allowfullscreen autoplay)
-            img(src="../images/rm.jpg", alt="Imagen")
-            img(src="../images/bb.jpg", alt="Imagen")
-            img(src="../images/cp.jpg", alt="Imagen")
-            img(src="../images/gg.jpg", alt="Imagen")
-            img(src="../images/rm.jpg", alt="Imagen")
+            button.left
+                i.icon-cheveron-left
+            .list__box-caroucel
+                img(src="../images/rm.jpg", alt="Imagen")
+                img(src="../images/bb.jpg", alt="Imagen")
+                img(src="../images/cp.jpg", alt="Imagen")
+                img(src="../images/gg.jpg", alt="Imagen")
+                img(src="../images/rm.jpg", alt="Imagen")
+                img(src="../images/bb.jpg", alt="Imagen")
+                img(src="../images/cp.jpg", alt="Imagen")
+                img(src="../images/gg.jpg", alt="Imagen")
+            button.right
+                i.icon-cheveron-right

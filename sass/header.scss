@@ -1,0 +1,42 @@
+%text-shadow{
+    text-shadow: $color-fondo 1px 0  6px;
+}
+
+.header {
+    @include response-to($mobile){
+        // @extend %text-shadow;
+        padding: 10px;
+        display:flex;
+        justify-content: space-around;
+        width: 95%;
+        align-items: center;
+        &__title{
+            font-size: 29px;
+            font-weight: bold;
+            color: $color-secundario;
+        }
+        &__nav{
+            font-size: 14px;
+             display:inline-flex;
+                overflow: hidden;
+            &--selected{
+                font-weight: bold;
+            }
+            &--end{
+                margin-left: auto;
+                li{
+                    display:inline-block;
+                    list-style-type: none;
+                    margin: 0 4px;
+                    padding: 0;
+                }
+            }
+            li{
+                display:inline-block;
+                list-style-type: none;
+                margin: 0 8px;
+                padding: 0;
+            }
+        }
+    }
+}
