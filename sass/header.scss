@@ -11,28 +11,39 @@
         width: 95%;
         align-items: center;
         &__title{
-            font-size: 29px;
+            font-size: 25px;
             font-weight: bold;
             color: $color-secundario;
         }
         &__nav{
             font-size: 14px;
-             display:inline-flex;
-                overflow: hidden;
+            display:inline-flex;
+            overflow: hidden;
             &--selected{
                 font-weight: bold;
             }
             &--end{
                 margin-left: auto;
+                ul{
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                }
                 li{
                     display:inline-block;
                     list-style-type: none;
                     margin: 0 4px;
+                    white-space: nowrap;
                     padding: 0;
                 }
             }
+            ul{
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+            }
             li{
-                display:inline-block;
+                white-space: nowrap;
                 list-style-type: none;
                 margin: 0 8px;
                 padding: 0;

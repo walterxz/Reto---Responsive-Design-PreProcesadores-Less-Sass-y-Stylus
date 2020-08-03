@@ -13,7 +13,7 @@
     align-items: center;
   }
   .header__title {
-    font-size: 29px;
+    font-size: 25px;
     font-weight: bold;
     color: #E50914;
   }
@@ -28,14 +28,25 @@
   .header__nav--end {
     margin-left: auto;
   }
+  .header__nav--end ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
   .header__nav--end li {
     display: inline-block;
     list-style-type: none;
     margin: 0 4px;
+    white-space: nowrap;
     padding: 0;
   }
+  .header__nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
   .header__nav li {
-    display: inline-block;
+    white-space: nowrap;
     list-style-type: none;
     margin: 0 8px;
     padding: 0;

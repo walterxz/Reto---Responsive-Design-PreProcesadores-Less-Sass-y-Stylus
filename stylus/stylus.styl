@@ -1,0 +1,47 @@
+color-fondo= #141414
+
+@media (min-width: 1240px) 
+    .main
+        background-image: url(../images/got2.jpg);
+        height: 700px;
+        width: 100vw;
+        background-size: 100vw;
+        position: absolute;
+        top: -10px;
+        left: -15px;
+        z-index: -1;
+        &__degradado
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), color-fondo);
+        
+    .intro
+        padding-top: 320px;
+        padding-bottom: 40px;
+        max-width: 600px;
+
+        &__title
+            font-weight: bold;
+            font-size: 28px;
+        
+        &__description
+            font-size: 16px
+            margin: 15px 0 15px 0;
+            line-height : 1.2em;
+        
+
+        &__button-a
+            padding: 8px 16px;
+            border: none;
+            text-decoration: none;
+            color: black;
+            border-radius: 8px;
+            font-weight: bold;
+        
+        &__button-b
+            padding: 8px 16px;
+            border: none;
+            text-decoration: none;
+            background-color: rgba(148, 148, 148, 0.6);
+            border-radius: 8px;
+        

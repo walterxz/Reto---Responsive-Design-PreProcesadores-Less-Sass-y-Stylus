@@ -16,6 +16,8 @@ body {
 }
 .header {
   position: fixed;
+  z-index: 10;
+  background: linear-gradient(to bottom, #141414, rgba(0, 0, 0, 0));
   top: 0;
   padding: 15px;
   display: flex;
@@ -164,9 +166,19 @@ body {
   width: 230px;
 }
 .list__box-caroucel img:hover {
-  box-shadow: #CCC 1px 0 10px;
-  height: 210px;
-  width: 410px;
+  animation-name: animation;
+  animation-duration: 1s;
+}
+@keyframes animation {
+  from {
+    height: 130px;
+    width: 230px;
+  }
+  to {
+    height: 210px;
+    width: 410px;
+    box-shadow: #CCC 1px 0 10px;
+  }
 }
 .outstanding {
   display: flex;
@@ -184,4 +196,12 @@ body {
 }
 .outstanding__card-title {
   padding: 18px 0;
+}
+.outstanding__card--bg {
+  height: 400px;
+  width: 700px;
+  left: 35%;
+  position: absolute;
+  background-image: url(../images/him.jpg);
+  opacity: 0.1;
 }
